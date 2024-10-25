@@ -14,14 +14,15 @@ hops = hs.Hops(app)
     description="Generate mesh based on grey map",
     icon="",
     inputs=[
-        hs.HopsNumber("height", "h", "Height factor", default=0.2),
+        hs.HopsNumber("height", "H", "Height factor", default=0.2),
+        hs.HopsInteger("step", "S", "Pixel step", default=5),
     ],
     outputs=[
         hs.HopsMesh("M", "M", "Mesh generated based on grey map"),
     ],
 )
-def generate_mesh_by_grep_map(height_factor):
-    mesh = get_mesh_by_grey_map(height_factor)
+def generate_mesh_by_grep_map(height_factor, step):
+    mesh = get_mesh_by_grey_map(height_factor, step)
     return mesh
 
 if __name__ == "__main__":
