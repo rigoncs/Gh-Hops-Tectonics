@@ -4,7 +4,7 @@
 ### Type 'PackageManager' on the Rhino Command line.
 - Then,search for "Hops"
 - Select Hops and then install
-![alt text](image.png)
+![alt text](assets/image.png)
 ### Install Python(CPython 3.8 or above)
 ### Install Visual Studio Code(recommended)
 ### Clone Project
@@ -18,7 +18,7 @@ $ pip install -r requirements.txt
 ```
 $ python .\app.py #启动flask
 ```
-![alt text](image-2.png)
+![alt text](assets/image-2.png)
 Double click to input url.
 "xxx" is the path of the function corresponding to the flask server.For example, the url of the function in the following screenshot is "http://127.0.0.1:5000/greymesh".
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
