@@ -2,7 +2,7 @@ import cv2
 import rhino3dm
 
 def get_mesh_by_grey_map(height_factor: float, step: int):
-    image = cv2.imread('imgs/grey_test.png', cv2.IMREAD_GRAYSCALE)
+    image = cv2.imread('imgs/img1.png', cv2.IMREAD_GRAYSCALE)
     # resized_image = cv2.resize(image, (image.shape[1] * scale_factor, image.shape[0] * scale_factor), interpolation=cv2.INTER_CUBIC)
     height, width = image.shape
     mesh = rhino3dm.Mesh()
